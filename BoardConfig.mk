@@ -22,7 +22,7 @@ DEVICE_PATH := device/samsung/greatlte
 TARGET_OTA_ASSERT_DEVICE := greatlte
 
 # Glove mode
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/glove_manifest.xml
+# DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/glove_manifest.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG := exynos8895-greatlte_defconfig
