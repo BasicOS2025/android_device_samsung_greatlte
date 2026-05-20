@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_gains.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_gains.xml
@@ -23,6 +21,9 @@ PRODUCT_COPY_FILES += \
 # Glove mode
 #PRODUCT_PACKAGES += \
 #    vendor.lineage.touch@1.0-service.universal8895
+
+PRODUCT_PACKAGES += \
+    FrameworksResDevice
 
 # Inherit from common
 $(call inherit-product, device/samsung/universal8895-common/device-common.mk)
