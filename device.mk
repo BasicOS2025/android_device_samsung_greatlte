@@ -1,3 +1,5 @@
+DEVICE_PATH := device/samsung/greatlte
+
 #
 # Copyright (C) 2019 The LineageOS Project
 #
@@ -16,7 +18,7 @@
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/mixer_gains.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_gains.xml
+    $(DEVICE_PATH)/configs/audio/mixer_gains.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_gains.xml
 
 # Glove mode
 #PRODUCT_PACKAGES += \
